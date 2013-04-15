@@ -1,0 +1,14 @@
+	
+	embedXcode
+	----------------------------------
+	Embedded Computing on Xcode 4
+	
+	
+	© Rei VILO, 2010-2013
+	CC = BY NC SA	
+	http://embedXcode.weebly.com/
+	
+	
+embedXcode • Mar 15, 2013 release 32 • Full automatic project configuration
+	
+	
