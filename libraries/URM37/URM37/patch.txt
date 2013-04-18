@@ -1,0 +1,16 @@
+// # This library is a improvement version of URM 37 Control Library Version 2.0.0 from Miles Burton
+// # Original Author: Miles Burton, miles@mnetcs.com
+// # 
+// # Editor     : Lauren from DFRobot
+// # Date       : 08.05.2012
+
+// # Product name: URM V3.2 ultrasonic sensor TTL connection with Arduino// # Product SKU : SEN0001
+// # Version     : 1.0
+// # Update the library to make it compatible with the Arduino IDE 1.0 or the latest version
+
+// # Description:
+// # The sketch for using the URM37 from DFRobot based on the Software Serial library
+// # You could drive the URM37 with 2 digital pins on your Arduino board, and it works stable.
+
+The latest version of this library can always be found at
+http://www.dfrobot.com.

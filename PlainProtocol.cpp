@@ -61,6 +61,37 @@ void PlainProtocol::init()
   while (!SerialTransceiver) ;
 }
 
+void PlainProtocol::write(String commandOrFrame)
+{
+  sendFrame(commandOrFrame);
+}
+void PlainProtocol::write(String command,int sendingContent0)
+{
+  sendFrame(command, 1, sendingContent0);
+}
+void PlainProtocol::write(String command,int sendingContent0, int sendingContent1)
+{
+  sendFrame(command, 2, sendingContent0, sendingContent1);
+}
+void PlainProtocol::write(String command,int sendingContent0, int sendingContent1, int sendingContent2)
+{
+  sendFrame(command, 3, sendingContent0, sendingContent1, sendingContent2);
+}
+void PlainProtocol::write(String command,int sendingContent0, int sendingContent1, int sendingContent2, int sendingContent3)
+{
+  sendFrame(command, 4, sendingContent0, sendingContent1, sendingContent2, sendingContent3);
+}
+void PlainProtocol::write(String command,int sendingContent0, int sendingContent1, int sendingContent2, int sendingContent3, int sendingContent4)
+{
+  sendFrame(command, 5, sendingContent0, sendingContent1, sendingContent2, sendingContent3, sendingContent4);
+}
+
+boolean PlainProtocol::available()
+{
+  return receiveFrame();
+}
+
+
 //send the frame directly
 void PlainProtocol::sendFrame(String theFrame)
 {

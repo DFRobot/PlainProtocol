@@ -69,11 +69,11 @@ private:
   HardwareSerial& SerialTransceiver;      //serial port to communicate with
   unsigned long serialBaud;               //baud of the serial
   void sendFrame();                       //send the frame prototype
-  boolean isSendingAddress,isReceivedAddress; //whether using address mode for input and output
   boolean parseFrame(String theFrame);    //parse the frame received
   boolean isNumber(String&  stringbuf);   //confirm whether the string is a valid number
   
 public:
+  boolean isSendingAddress,isReceivedAddress; //whether using address mode for received and sending
   
   String receivedCommand,sendingCommand;      //input and output command name
   int receivedAddress,sendingAddress;         //input and output adress number
@@ -102,6 +102,20 @@ public:
   
   //send the frame with address, the content should be int only.
   void sendFrame(int address, String command, int lenth, ...);
+  
+  void write(String command);
+  void write(String command,int sendingContent0);
+  void write(String command,int sendingContent0, int sendingContent1);
+  void write(String command,int sendingContent0, int sendingContent1, int sendingContent2);
+  void write(String command,int sendingContent0, int sendingContent1, int sendingContent2, int sendingContent3);
+  void write(String command,int sendingContent0, int sendingContent1, int sendingContent2, int sendingContent3, int sendingContent4);
+
+  boolean available();
+
+  
+  
+  
+  
 
 };
 
