@@ -7,7 +7,7 @@
   Project PlainProtocol
   Created by qiao on 13-4-2
   Copyright © 2013年 qiao
-  Licence CC = BY SA NC
+  Licence CC = BY-SA 4.0
 
 
   References
